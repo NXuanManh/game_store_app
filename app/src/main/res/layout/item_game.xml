@@ -1,0 +1,57 @@
+`<?xml version="1.0" encoding="utf-8"?>
+<!--TODO item này để hiển thị game với hình ảnh tên game và giá-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10dp"
+    app:cardElevation="8dp"
+    android:outlineAmbientShadowColor="@color/black"
+    android:clipChildren="false"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--TODO hiển thị hình ảnh cua game-->
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/img_game"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_infor_game"
+            >
+            <!--TODO hiển thị tên cua game-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="EVE Online"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+            <!--TODO hiển thị giá cua game-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="EVE Online"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
